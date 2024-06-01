@@ -1,4 +1,4 @@
-//Recipe List where the List of all recipes are shown
+//Recipe List - where the List of all recipes are shown
 
 import RecipeList from "@/components/recipe-list";
 

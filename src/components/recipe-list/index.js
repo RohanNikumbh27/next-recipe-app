@@ -7,23 +7,24 @@ export default function RecipeList({ recipeList }) {
     <div className="bg-colour-custom">
       {/* <div className="h-2 bg-gradient-to-r from-zinc-500 to-zinc-950 "></div> */}
       <div className="p-4 mx-auto lg:max-w-6xl md:max-w-4xl sm:max-w-full ">
-        <h2 className="text-4xl font-bold bg-gradient-to-r from-zinc-600 to-zinc-950 text-transparent inline-block bg-clip-text ">
-          Recipes
-        </h2>
-        <br></br>
-        <Link
-          className="bg-gradient-to-r from-zinc-800 to-zinc-950 text-white text-bold rounded p-3 inline-block m-5 ml-0"
-          href={"/"}
-        >
-          Go Home
-        </Link>
+        <div className="inline-block w-full mb-3">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-zinc-300 via-white to-zinc-400 text-transparent inline-block bg-clip-text mt-5">
+            Recipes
+          </h2>
+          <Link
+            className="bg-gradient-to-r from-zinc-800 to-zinc-950 text-white text-bold rounded-2xl p-3 inline-block m-5 float-right"
+            href={"/"}
+          >
+            Go Home
+          </Link>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {recipeList && recipeList.length > 0
             ? recipeList.map((recipe) => (
                 <Link href={`/recipe-list/${recipe.id}`} className="">
                   <Card className="Card shadow-2xl rounded-2xl bg-transparent lg:backdrop-blur-3xl md:backdrop-blur-3xl cursor-pointer hover:scale-[1.02] transition-all outline-none border-none">
                     <CardContent className="card-bg-custom rounded-2xl overflow-hidden shadow-md ">
-                      <div className="w-full aspect-w-16 aspect-h-8 lg:h-80 thiscarddiv">
+                      <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
                         <img
                           src={recipe.image}
                           alt={recipe.name}
