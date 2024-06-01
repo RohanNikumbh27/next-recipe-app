@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function RecipeDetailsItem({ getRecipeDetails }) {
   return (
-    <div className="bg-gradient-to-r min-h-screen bg-colour-custom">
+    <div className="bg-gradient-to-r min-h-screen bg-colour-custom ">
       <Link
         href={"/recipe-list"}
         className="bg-gradient-to-r from-zinc-800 to-zinc-950 text-white text-bold rounded p-3 inline-block m-4 ml-6 mb-0"
@@ -15,7 +15,7 @@ export default function RecipeDetailsItem({ getRecipeDetails }) {
             <img
               src={getRecipeDetails?.image}
               name={getRecipeDetails?.name}
-              className="w-4/5 rounded-3xl hover:rotate-2 hover:scale-110 transition-all object-cover"
+              className="w-4/5 rounded-3xl hover:mt-20 hover:rotate-2 hover:scale-110 transition-all object-cover"
             />
           </div>
           <div>

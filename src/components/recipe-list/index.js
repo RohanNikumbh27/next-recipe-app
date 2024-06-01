@@ -21,7 +21,7 @@ export default function RecipeList({ recipeList }) {
           {recipeList && recipeList.length > 0
             ? recipeList.map((recipe) => (
                 <Link href={`/recipe-list/${recipe.id}`} className="">
-                  <Card className="shadow-2xl rounded-2xl bg-transparent lg:backdrop-blur-3xl md:backdrop-blur-3xl cursor-pointer hover:scale-[1.02] transition-all outline-none border-none">
+                  <Card className="Card shadow-2xl rounded-2xl bg-transparent lg:backdrop-blur-3xl md:backdrop-blur-3xl cursor-pointer hover:scale-[1.02] transition-all outline-none border-none">
                     <CardContent className="card-bg-custom rounded-2xl overflow-hidden shadow-md ">
                       <div className="w-full aspect-w-16 aspect-h-8 lg:h-80 thiscarddiv">
                         <img

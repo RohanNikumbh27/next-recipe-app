@@ -1,3 +1,5 @@
+//One recipe where where the List of all recipes are shown
+
 import RecipeDetailsItem from "@/components/recipe-details";
 
 async function fetchRecipeDetails(currentRecipeId) {
